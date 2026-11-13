@@ -144,6 +144,8 @@ class Nicole(Adulte, Colerique):
             self.calmer()
             return base // 2
         return -(base // 4)
+    def __str__(self):
+        return super().__str__() + f" (colère={self.colere})"
 
 
 class Richard(Adulte, Farceur):
