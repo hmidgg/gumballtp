@@ -32,6 +32,16 @@ Les situations prédéfinies sont un incendie, une inondation et une bêtise de
 Gumball. Elles peuvent être créées avec `Situation.incendie(gravite)`,
 `Situation.inondation(gravite)` et `Situation.betise(gravite)`.
 
+## Nicole et Penny
+
+La classe Penny a été ajoutée comme personnage enfant. Elle réduit davantage
+le chaos des situations liées à l’eau, car elle y est à l’aise, et réagit
+différemment aux autres dangers.
+
+Nicole affiche désormais aussi son niveau de colère. Son affichage réutilise
+celui de la classe mère afin de conserver les informations communes du
+personnage sans en recopier le format, puis d’ajouter son état propre.
+
 ## Tests
 
 Installez `pytest` si nécessaire, puis lancez :
