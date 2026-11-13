@@ -152,3 +152,12 @@ class Richard(Adulte, Farceur):
 
     def reagir(self, situation):
         return situation.chaos_de_base() // 4
+class Penny(Enfant):
+    def __init__(self, energie=100):
+        super().__init__("Penny", energie)
+
+    def reagir(self, situation):
+        base = situation.chaos_de_base()
+        if situation.type_danger == "eau":
+            return -(base // 3)
+        return -(base // 5)
