@@ -18,6 +18,13 @@ class Equipe:
 
     def __str__(self):
         return ", ".join(m.nom for m in self._membres)
+    def __add__(self, autre):
+        if isinstance(autre, Equipe):
+            return Equipe(self._membres + autre.membres)
+        if hasattr(autre, "agir"):
+            return Equipe(self._membres + [autre])
+        return NotImplemented
+       
 
 
 class Journal:
