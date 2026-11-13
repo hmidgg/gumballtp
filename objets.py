@@ -20,4 +20,3 @@ class Serpilliere:
         return 0
     def __str__(self):
         return "Serpillière"
-        

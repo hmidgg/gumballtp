@@ -66,3 +66,14 @@ class Simulation:
         if self.est_perdue():
             return "DÉFAITE : trop de chaos"
         return "VICTOIRE : Elmore est sauvée"
+
+    def lancer(self, *situations):
+        if  len(situations) == 1 and isinstance(situations[0],(list,tuple)):
+            situations = situations[0]
+        for situation in situations:
+            if self.est_perdue():
+                break
+            self.jouer_tour(situation)
+            if self.est_perdue():
+                return "DÉFAITE : trop de chaos"
+        return "VICTOIRE : Elmore est sauvée"
