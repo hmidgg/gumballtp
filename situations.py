@@ -1,16 +1,14 @@
 class Situation:
     """Situation chaotique."""
 
-    TYPES = ("feu", "eau", "betise")
-    COUTS = {"feu": 3, "eau": 2, "betise": 2}
+    TYPES = ("feu", "eau", "betise")                    
+    COUTS = {"feu": 3, "eau": 2, "betise": 2}           
 
     def __init__(self, nom, gravite, type_danger):
         if not 1 <= gravite <= 10:
             raise ValueError("La gravité doit être comprise entre 1 et 10")
-
         if not Situation.type_valide(type_danger):
             raise ValueError("Type de danger inconnu")
-
         self._nom = nom
         self._gravite = gravite
         self._type_danger = type_danger
@@ -53,7 +51,5 @@ class Situation:
         return f"{self._nom} (gravité {self._gravite})"
 
     def __repr__(self):
-        return (
-            f"Situation({self._nom!r}, {self._gravite}, "
-            f"{self._type_danger!r})"
-        )
+        return (f"Situation({self._nom!r}, {self._gravite}, "
+                f"{self._type_danger!r})")
