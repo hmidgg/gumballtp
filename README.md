@@ -4,6 +4,13 @@ Un jeu de simulation en Python où Gumball et sa famille tentent de sauver
 Elmore de situations chaotiques. Chaque personnage réagit différemment aux
 événements et dépense de l’énergie pour agir.
 
+## Objectif du projet
+
+Ce projet a été réalisé pour mieux comprendre la programmation orientée objet
+et apprendre à l’utiliser en Python. En mettant en pratique des notions comme
+les classes, l’héritage et la redéfinition des méthodes, l’objectif est aussi
+de faire évoluer et d’améliorer progressivement le projet.
+
 ## Prérequis
 
 - Python 3
